@@ -96,8 +96,8 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url> http://172.31.18.29:8081/repository/ebay-bts-releases/</url>
+	      <name>Releases Nexus Repository</name>
+	      <url>http://3.17.66.32:8081/repository/tesla-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
