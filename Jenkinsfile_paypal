@@ -1,0 +1,30 @@
+node {
+    def mavenHome = tool name:'maven'
+  stage('1CloneCode'){
+      git "https://github.com/Nnakenyi-John/maven-web-application"
+  }     
+  stage('2Test&Build'){
+      sh "${mavenHome}/bin/mvn install"
+  }
+  stage('3CodeQuality'){
+      sh "${mavenHome}/bin/mvn sonar:sonar"
+  }
+  stage('4UploadArtifacts'){
+      sh "${mavenHome}/bin/mvn deploy"
+  }
+  stage('5deploy_UAT'){
+      
+  }
+  stage('6Approval'){
+      
+  }
+  stage('7deploy_prod'){
+      
+  }
+  stage('8Notification'){
+      
+  }
+    
+    
+    
+}
